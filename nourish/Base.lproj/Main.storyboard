@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -38,6 +38,9 @@
                                         <state key="normal" title="FIND RESTAURANTS">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="hFo-aF-ufm" kind="show" id="lvW-p4-ZZj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfE-tT-ueK">
                                         <rect key="frame" x="102" y="133" width="150" height="58"/>
@@ -72,6 +75,21 @@
             <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="wy7-6T-gNK">
+            <objects>
+                <viewController id="hFo-aF-ufm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rVZ-LI-bYl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BvW-ZR-XnQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="217-la-jd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="842"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="qBb-08-0kb">
             <objects>
                 <viewController id="oVP-Ed-i99" sceneMemberID="viewController">
@@ -79,12 +97,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-dy-I26">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo-Alt" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-dy-I26">
                                 <rect key="frame" x="42" y="57" width="106" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdd-0P-8yD">
-                                <rect key="frame" x="132" y="164" width="150.5" height="52"/>
+                                <rect key="frame" x="131.66666666666669" y="164" width="150.66666666666669" height="52"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.36078431370000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -103,9 +121,36 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="DRW-z7-6s3">
+                                <rect key="frame" x="20" y="298" width="374" height="110"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eat" translatesAutoresizingMaskIntoConstraints="NO" id="20g-ZT-YCB">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="ZxZ-KY-rI0"/>
+                                            <constraint firstAttribute="height" constant="110" id="sN1-fD-jBz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Take Pic" translatesAutoresizingMaskIntoConstraints="NO" id="vGW-JO-YgN">
+                                        <rect key="frame" x="132" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="3rw-nj-kTy"/>
+                                            <constraint firstAttribute="width" constant="110" id="UuQ-Zh-6yq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Donate" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-oQ-vrL">
+                                        <rect key="frame" x="264" y="0.0" width="110" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="XaH-vl-xTD"/>
+                                            <constraint firstAttribute="height" constant="110" id="b3U-Wh-8vr"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.65490196078431373" green="0.81960784313725488" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="DRW-z7-6s3" firstAttribute="centerX" secondItem="7pQ-Op-crL" secondAttribute="centerX" id="9Q9-VR-jcL"/>
                             <constraint firstItem="Qdd-0P-8yD" firstAttribute="top" secondItem="7pQ-Op-crL" secondAttribute="topMargin" constant="120" id="Uar-Je-Ouf"/>
                             <constraint firstItem="Qdd-0P-8yD" firstAttribute="centerX" secondItem="7pQ-Op-crL" secondAttribute="centerX" id="f5L-zA-eof"/>
                         </constraints>
@@ -114,10 +159,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNf-p0-3SZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828.98550724637687" y="115.84821428571428"/>
+            <point key="canvasLocation" x="995.65217391304361" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Donate" width="512" height="512"/>
+        <image name="Eat" width="512" height="512"/>
         <image name="Logo" width="1080" height="1080"/>
+        <image name="Logo-Alt" width="1080" height="1080"/>
+        <image name="Take Pic" width="512" height="512"/>
     </resources>
 </document>

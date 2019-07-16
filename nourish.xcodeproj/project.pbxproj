@@ -13,6 +13,7 @@
 		A7F6BDA722DD14CC006578DF /* nourish.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7F6BDA522DD14CC006578DF /* nourish.xcdatamodeld */; };
 		A7F6BDA922DD14CD006578DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F6BDA822DD14CD006578DF /* Assets.xcassets */; };
 		A7F6BDAC22DD14CD006578DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F6BDAA22DD14CD006578DF /* LaunchScreen.storyboard */; };
+		A7F6BDB422DE7084006578DF /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6BDB322DE7084006578DF /* MapController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A7F6BDA822DD14CD006578DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F6BDAB22DD14CD006578DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7F6BDAD22DD14CD006578DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7F6BDB322DE7084006578DF /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A7F6BDAA22DD14CD006578DF /* LaunchScreen.storyboard */,
 				A7F6BDAD22DD14CD006578DF /* Info.plist */,
 				A7F6BDA522DD14CC006578DF /* nourish.xcdatamodeld */,
+				A7F6BDB322DE7084006578DF /* MapController.swift */,
 			);
 			path = nourish;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F6BDB422DE7084006578DF /* MapController.swift in Sources */,
 				A7F6BDA722DD14CC006578DF /* nourish.xcdatamodeld in Sources */,
 				A7F6BDA122DD14CC006578DF /* ViewController.swift in Sources */,
 				A7F6BD9F22DD14CC006578DF /* AppDelegate.swift in Sources */,

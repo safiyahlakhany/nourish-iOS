@@ -77,6 +77,7 @@
         <!--View Controller-->
         <scene sceneID="wy7-6T-gNK">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="217-la-jd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="hFo-aF-ufm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rVZ-LI-bYl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -85,9 +86,32 @@
                         <viewLayoutGuide key="safeArea" id="BvW-ZR-XnQ"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="217-la-jd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="842"/>
+        </scene>
+        <!--Map Controller-->
+        <scene sceneID="b7A-K6-j4F">
+            <objects>
+                <viewController id="jmf-Yz-JpI" customClass="MapController" customModule="nourish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JZS-GO-sPa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dXj-YU-uLf">
+                                <rect key="frame" x="37" y="90" width="357" height="578"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65490196079999996" green="0.81960784310000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="DEn-ff-gEg"/>
+                    </view>
+                    <connections>
+                        <outlet property="Map" destination="dXj-YU-uLf" id="3YJ-8N-gyP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aqx-Dv-Paw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969.56521739130437" y="831.69642857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qBb-08-0kb">

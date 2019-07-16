@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DbE-IJ-NyJ">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,21 +15,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="nourish" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Uwo-Jw-JSQ">
-                                <rect key="frame" x="0.0" y="40" width="414" height="300"/>
+                                <rect key="frame" x="-207" y="40" width="414" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="FI2-xb-kUw"/>
                                     <constraint firstAttribute="height" constant="300" id="cDw-1N-ByL"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="6wE-UZ-ChL">
-                                <rect key="frame" x="30" y="460" width="354" height="191"/>
+                                <rect key="frame" x="26" y="460" width="350" height="191"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wRx-Ih-wIV">
-                                        <rect key="frame" x="2" y="0.0" width="350" height="58"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="58"/>
                                         <color key="backgroundColor" red="0.25882352939999997" green="0.36078431370000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="350" id="Z8v-aO-Lee"/>
@@ -43,7 +43,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfE-tT-ueK">
-                                        <rect key="frame" x="102" y="133" width="150" height="58"/>
+                                        <rect key="frame" x="100" y="133" width="150" height="58"/>
                                         <color key="backgroundColor" red="0.25882352939999997" green="0.36078431370000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="150" id="YgE-aP-Pko"/>
@@ -79,7 +79,7 @@
             <objects>
                 <viewController id="hFo-aF-ufm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rVZ-LI-bYl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="BvW-ZR-XnQ"/>
@@ -89,12 +89,64 @@
             </objects>
             <point key="canvasLocation" x="138" y="842"/>
         </scene>
+        <!--Upload-->
+        <scene sceneID="V0x-JS-x9M">
+            <objects>
+                <viewController title="Upload" id="DbE-IJ-NyJ" customClass="UploadController" customModule="nourish" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UPE-53-TbA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uQW-gH-o4S">
+                                <rect key="frame" x="37.5" y="70" width="300" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="JY3-Bf-LwC"/>
+                                    <constraint firstAttribute="height" constant="350" id="LgR-aP-shm"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoR-cL-EnU">
+                                <rect key="frame" x="150" y="470" width="75" height="64"/>
+                                <state key="normal" image="Camera"/>
+                                <connections>
+                                    <action selector="take:" destination="DbE-IJ-NyJ" eventType="touchUpInside" id="DyQ-6V-cfC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA2-n8-8zd">
+                                <rect key="frame" x="113.5" y="584" width="148" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                <state key="normal" title=" Use photo ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZoR-cL-EnU" firstAttribute="top" secondItem="uQW-gH-o4S" secondAttribute="bottom" constant="50" id="0lt-dW-0Mw"/>
+                            <constraint firstItem="WA2-n8-8zd" firstAttribute="centerX" secondItem="UPE-53-TbA" secondAttribute="centerX" id="CsG-IJ-evd"/>
+                            <constraint firstItem="ZoR-cL-EnU" firstAttribute="leading" secondItem="UPE-53-TbA" secondAttribute="leading" constant="150" id="Ejw-a8-sxL"/>
+                            <constraint firstItem="ZoR-cL-EnU" firstAttribute="centerX" secondItem="UPE-53-TbA" secondAttribute="centerX" id="TtZ-0e-pjW"/>
+                            <constraint firstItem="uQW-gH-o4S" firstAttribute="top" secondItem="UPE-53-TbA" secondAttribute="topMargin" constant="50" id="dit-cJ-wzX"/>
+                            <constraint firstItem="WA2-n8-8zd" firstAttribute="top" secondItem="ZoR-cL-EnU" secondAttribute="bottom" constant="50" id="nd4-7C-5kh"/>
+                            <constraint firstItem="uQW-gH-o4S" firstAttribute="centerX" secondItem="UPE-53-TbA" secondAttribute="centerX" id="siO-fX-GXk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vw3-de-An7"/>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="uQW-gH-o4S" id="0Vc-am-1A0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ApR-mk-mD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="838"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="qBb-08-0kb">
             <objects>
                 <viewController id="oVP-Ed-i99" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7pQ-Op-crL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo-Alt" translatesAutoresizingMaskIntoConstraints="NO" id="ohF-dy-I26">
@@ -102,7 +154,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdd-0P-8yD">
-                                <rect key="frame" x="131.66666666666669" y="164" width="150.66666666666669" height="52"/>
+                                <rect key="frame" x="112.5" y="140" width="150.5" height="52"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="40"/>
                                 <color key="textColor" red="0.25882352939999997" green="0.36078431370000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -122,7 +174,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="DRW-z7-6s3">
-                                <rect key="frame" x="20" y="298" width="374" height="110"/>
+                                <rect key="frame" x="0.5" y="298" width="374" height="110"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Eat" translatesAutoresizingMaskIntoConstraints="NO" id="20g-ZT-YCB">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
@@ -163,6 +215,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Camera" width="64" height="64"/>
         <image name="Donate" width="512" height="512"/>
         <image name="Eat" width="512" height="512"/>
         <image name="Logo" width="1080" height="1080"/>

@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="217-la-jd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138" y="842"/>
+            <point key="canvasLocation" x="1252" y="10"/>
         </scene>
         <!--Upload-->
         <scene sceneID="V0x-JS-x9M">
@@ -131,7 +131,7 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.65490196079999996" green="0.81960784310000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZoR-cL-EnU" firstAttribute="top" secondItem="uQW-gH-o4S" secondAttribute="bottom" constant="50" id="0lt-dW-0Mw"/>
                             <constraint firstItem="WA2-n8-8zd" firstAttribute="centerX" secondItem="UPE-53-TbA" secondAttribute="centerX" id="CsG-IJ-evd"/>
@@ -227,20 +227,20 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Food4Poor" translatesAutoresizingMaskIntoConstraints="NO" id="Ury-IQ-HNn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Food4Poor" translatesAutoresizingMaskIntoConstraints="NO" id="Ury-IQ-HNn">
                                 <rect key="frame" x="-14" y="693" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" misplaced="YES" image="Make a wish" translatesAutoresizingMaskIntoConstraints="NO" id="EOM-hD-aA5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="Make a wish" translatesAutoresizingMaskIntoConstraints="NO" id="EOM-hD-aA5">
                                 <rect key="frame" x="181" y="693" width="225" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="CdH-l8-QaW"/>
+                                    <constraint firstAttribute="height" constant="128" id="YCC-je-six"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.65490196078431373" green="0.81960784313725488" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="H7R-dU-iZ6" firstAttribute="leading" secondItem="7pQ-Op-crL" secondAttribute="leading" constant="30" id="05w-Xz-zfT"/>
+                            <constraint firstItem="EOM-hD-aA5" firstAttribute="bottom" secondItem="Ury-IQ-HNn" secondAttribute="bottom" id="4rX-fl-BJ6"/>
                             <constraint firstItem="H7R-dU-iZ6" firstAttribute="centerX" secondItem="7pQ-Op-crL" secondAttribute="centerX" id="91s-56-3lQ"/>
                             <constraint firstItem="DRW-z7-6s3" firstAttribute="centerX" secondItem="7pQ-Op-crL" secondAttribute="centerX" id="9Q9-VR-jcL"/>
                             <constraint firstItem="nbd-q1-fAE" firstAttribute="leading" secondItem="7pQ-Op-crL" secondAttribute="leadingMargin" constant="30" id="Gpu-yE-Jmz"/>
@@ -248,13 +248,16 @@
                             <constraint firstItem="H7R-dU-iZ6" firstAttribute="top" secondItem="XPN-8N-YFc" secondAttribute="bottom" constant="11" id="Nnp-4D-Jar"/>
                             <constraint firstAttribute="trailing" secondItem="H7R-dU-iZ6" secondAttribute="trailing" constant="30" id="Och-TP-lmO"/>
                             <constraint firstItem="XPN-8N-YFc" firstAttribute="leading" secondItem="ohF-dy-I26" secondAttribute="leading" id="Q6U-LD-CW4"/>
+                            <constraint firstItem="EOM-hD-aA5" firstAttribute="top" secondItem="Ury-IQ-HNn" secondAttribute="top" id="QTo-Ko-uOh"/>
+                            <constraint firstItem="JQF-6W-xwh" firstAttribute="trailing" secondItem="Ury-IQ-HNn" secondAttribute="trailing" constant="188" id="R3a-AZ-DgM"/>
                             <constraint firstItem="Qdd-0P-8yD" firstAttribute="top" secondItem="7pQ-Op-crL" secondAttribute="topMargin" constant="120" id="Uar-Je-Ouf"/>
-                            <constraint firstAttribute="trailing" secondItem="EOM-hD-aA5" secondAttribute="trailing" constant="30" id="YU7-Pt-hR7"/>
+                            <constraint firstItem="EOM-hD-aA5" firstAttribute="top" secondItem="H7R-dU-iZ6" secondAttribute="bottom" constant="8" symbolic="YES" id="bMp-yR-BcR"/>
                             <constraint firstItem="Qdd-0P-8yD" firstAttribute="centerX" secondItem="7pQ-Op-crL" secondAttribute="centerX" id="f5L-zA-eof"/>
-                            <constraint firstItem="EOM-hD-aA5" firstAttribute="bottom" secondItem="JQF-6W-xwh" secondAttribute="bottom" id="hX5-jD-zWw"/>
+                            <constraint firstItem="Ury-IQ-HNn" firstAttribute="leading" secondItem="7pQ-Op-crL" secondAttribute="leadingMargin" constant="-34" id="l4h-cE-dwk"/>
                             <constraint firstItem="DRW-z7-6s3" firstAttribute="top" secondItem="nbd-q1-fAE" secondAttribute="bottom" constant="20" id="qbQ-PT-hSx"/>
                             <constraint firstItem="ohF-dy-I26" firstAttribute="top" secondItem="JQF-6W-xwh" secondAttribute="top" constant="13" id="sxY-7w-lfP"/>
                             <constraint firstItem="JQF-6W-xwh" firstAttribute="trailing" secondItem="ohF-dy-I26" secondAttribute="trailing" constant="266" id="tmk-xH-o8k"/>
+                            <constraint firstItem="EOM-hD-aA5" firstAttribute="leading" secondItem="JQF-6W-xwh" secondAttribute="leading" constant="181" id="vph-7Q-mql"/>
                             <constraint firstItem="H7R-dU-iZ6" firstAttribute="top" secondItem="DRW-z7-6s3" secondAttribute="bottom" constant="130" id="whc-C5-4nM"/>
                             <constraint firstItem="nbd-q1-fAE" firstAttribute="top" secondItem="Qdd-0P-8yD" secondAttribute="bottom" constant="20" id="xmI-nN-EfU"/>
                         </constraints>
@@ -263,7 +266,116 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNf-p0-3SZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="995.65217391304361" y="115.84821428571428"/>
+            <point key="canvasLocation" x="138" y="877"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jDz-BQ-PvW">
+            <objects>
+                <viewController id="5mZ-lP-fAt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AuD-ip-0RC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="4C4-Qa-M5m">
+                                <rect key="frame" x="0.0" y="0.0" width="418" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="white" translatesAutoresizingMaskIntoConstraints="NO" id="5tN-y4-83H">
+                                <rect key="frame" x="25" y="335" width="121" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starbucks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hJ-dI-n0d">
+                                <rect key="frame" x="0.0" y="271" width="233" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="ry3-Yv-NjG">
+                                <rect key="frame" x="49" y="335" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="WWt-8z-VbX">
+                                <rect key="frame" x="73" y="335" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="iM4-nn-8xR">
+                                <rect key="frame" x="97" y="335" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="d0f-Nm-L8x">
+                                <rect key="frame" x="25" y="335" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="H0E-Qw-qyG">
+                                <rect key="frame" x="121" y="335" width="25" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address: Address: 665 E Foothill Blvd Unit #B, Claremont, CA 91711" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWy-aU-S4G">
+                                <rect key="frame" x="20" y="428" width="203" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hours Today: 5:00AM-8:30PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAJ-VX-GeL">
+                                <rect key="frame" x="20" y="394" width="255" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9 reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctx-Ql-h8U">
+                                <rect key="frame" x="154" y="337" width="65" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Coffeehouse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUb-yg-rF9">
+                                <rect key="frame" x="20" y="368" width="86" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYM-Ks-l0M">
+                                <rect key="frame" x="64" y="523" width="93" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.38407046950000001" green="0.58520383880000004" blue="0.2414827964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Add Review">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WA9-Qx-DgK">
+                                <rect key="frame" x="187" y="524" width="177" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36626395969999997" green="0.55692814089999998" blue="0.24878414539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="Add Picture to Donate!">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dao-s8-G9b">
+                                <rect key="frame" x="20" y="683" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gallery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ef-Gj-TNJ">
+                                <rect key="frame" x="33" y="617" width="104" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65490196079999996" green="0.81960784310000001" blue="0.42745098040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="OYN-Nm-rRA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOd-Zh-zUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1967" y="492"/>
         </scene>
     </scenes>
     <resources>
@@ -277,5 +389,8 @@
         <image name="Logo-Alt" width="1080" height="1080"/>
         <image name="Make a wish" width="225" height="225"/>
         <image name="Take Pic" width="512" height="512"/>
+        <image name="coffee" width="652" height="367"/>
+        <image name="star" width="512" height="512"/>
+        <image name="white" width="1022" height="768"/>
     </resources>
 </document>

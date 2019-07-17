@@ -2,20 +2,41 @@
 //  MapController.swift
 //  nourish
 //
-//  Created by Safiyah Lakhany on 7/16/19.
+//  Created by Safiyah Lakhany on 7/17/19.
 //  Copyright © 2019 Safiyah Lakhany. All rights reserved.
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class MapController: UIViewController {
+class MapController: UIViewController
+{
 
-    override func viewDidLoad() {
+    @IBOutlet weak var Map: MKMapView!
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-
+        
+        var location = CLLocationCoordinate2D(latitude: 34.106053, longitude: -117.709770)
+        
+        var annotation = MKPointAnnotation()
+        var span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 00.2)
+        var region = MKCoordinateRegion(center: location, span: span)
+        
+        annotation.coordinate = location
+        annotation.title = "The Cafe"
+        annotation.subtitle = "Harvey Mudd College"
+        Map.addAnnotation(annotation)
+        
+        
+        
         // Do any additional setup after loading the view.
     }
     
+   
 
     /*
     // MARK: - Navigation

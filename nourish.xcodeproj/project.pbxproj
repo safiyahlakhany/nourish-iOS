@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A74F59DD22DF907F006AEE1E /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74F59DC22DF907F006AEE1E /* MapController.swift */; };
 		A7F6BD9F22DD14CC006578DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6BD9E22DD14CC006578DF /* AppDelegate.swift */; };
 		A7F6BDA122DD14CC006578DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7F6BDA022DD14CC006578DF /* ViewController.swift */; };
 		A7F6BDA422DD14CC006578DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F6BDA222DD14CC006578DF /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A74F59DC22DF907F006AEE1E /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		A7F6BD9B22DD14CC006578DF /* nourish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nourish.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7F6BD9E22DD14CC006578DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7F6BDA022DD14CC006578DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				A7F6BDAD22DD14CD006578DF /* Info.plist */,
 				A7F6BDA522DD14CC006578DF /* nourish.xcdatamodeld */,
 				CCBD34AD22DE702A00CDFE50 /* UploadController.swift */,
+				A74F59DC22DF907F006AEE1E /* MapController.swift */,
 			);
 			path = nourish;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				A7F6BDA722DD14CC006578DF /* nourish.xcdatamodeld in Sources */,
 				A7F6BDA122DD14CC006578DF /* ViewController.swift in Sources */,
 				CCBD34AE22DE702A00CDFE50 /* UploadController.swift in Sources */,
+				A74F59DD22DF907F006AEE1E /* MapController.swift in Sources */,
 				A7F6BD9F22DD14CC006578DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,13 +295,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CKN8SD9KJ4;
+				DEVELOPMENT_TEAM = BM495Y497C;
 				INFOPLIST_FILE = nourish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SL.nourish-Sue";
+				PRODUCT_BUNDLE_IDENTIFIER = SL.nourish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,13 +313,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CKN8SD9KJ4;
+				DEVELOPMENT_TEAM = BM495Y497C;
 				INFOPLIST_FILE = nourish/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "SL.nourish-Sue";
+				PRODUCT_BUNDLE_IDENTIFIER = SL.nourish;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

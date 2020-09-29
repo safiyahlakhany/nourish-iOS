@@ -11,7 +11,12 @@ import UIKit
 class UploadController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var image: UIImageView!
-     var imagePickerController: UIImagePickerController!
+    
+    var imagePickerController: UIImagePickerController!
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,6 +46,25 @@ class UploadController: UIViewController, UINavigationControllerDelegate, UIImag
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imagePickerController.dismiss(animated: true, completion: nil)
         image.image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+    }
+    func saveImage(imageName: String){
+        //create an instance of the FileManager
+        let fileManager = FileManager.default
+        //get the image path
+        let imagePath = (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString).appendingPathComponent(imageName)
+        //get the image we took with camera
+        let imageView = image.image!
+        let imageData=imageView.pngData()
+        //get the PNG data for this image
+        fileManager.createFile(atPath: imagePath as String, contents: imageData, attributes: nil)
+        //store it in the document directory    fileManager.createFile(atPath: imagePath as String, contents: data, attributes: nil)
+    }
+    
+    
+    
+    @IBAction func onSaveButton(_ sender: Any) {
+        saveImage(imageName: "test.png" )
+        nextButton.isHidden = false
     }
     
 
